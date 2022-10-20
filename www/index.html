@@ -192,7 +192,7 @@
         // ButtonBがクリックされた時の処理
         function btnBClick(e) {
             active = false;
-
+            
         }
 
         // ButtonCがクリックされた時の処理
@@ -206,6 +206,7 @@
         }
         //buttonDがクリックされたときの処理
         function btnDClick(e) {
+            active = true;
             active = false;
             period = 180;
             $("#time").html("経過時間： 0");
@@ -245,7 +246,7 @@
     <button id="btnA">Start</button>
     <button id="btnB">Stop</button>
     <button id="btnC">Set</button>
-    <button id="btnD">btnD</button>
+    <button id="btnD">3分タイマー</button>
     <input type="number" id="minute" value=0>
     <input type="number" id="second" value=15>
 </body>
